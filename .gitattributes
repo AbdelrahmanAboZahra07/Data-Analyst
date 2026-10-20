@@ -1,7 +1,9 @@
-# خلي جيت هاب يتجاهل ملفات الاكسيل والباور بي آي
-*.xlsx linguist-vendored
-*.xls linguist-vendored
-*.pbix linguist-vendored
+# اعتبر كل حاجة مش كود معادا الـ SQL
+* linguist-vendored
 
-# قول لجيت هاب ان ده مشروع SQL و Power BI
-*.sql linguist-language=TSQL linguist-detectable=true
+# رجع الـ SQL تاني كأنه هو اللغة الأساسية
+*.sql linguist-vendored=false linguist-language=TSQL linguist-detectable=true
+*.sql linguist-documentation=false
+
+# الـ README يظهر عادي
+*.md linguist-vendored=false
