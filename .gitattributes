@@ -1,0 +1,7 @@
+# خلي جيت هاب يتجاهل ملفات الاكسيل والباور بي آي
+*.xlsx linguist-vendored
+*.xls linguist-vendored
+*.pbix linguist-vendored
+
+# قول لجيت هاب ان ده مشروع SQL و Power BI
+*.sql linguist-language=TSQL linguist-detectable=true
